@@ -7,76 +7,107 @@
   <meta name="description" content="Learn how to log into your Eero router using the official Eero mobile app. Understand Eero’s secure, app-based login process and why web login is not supported." />
   <title>How to Log into Eero Router</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary-color: #4a90e2;
+      --accent-color: #00c9a7;
+      --text-dark: #2d2d2d;
+      --bg-light: #f0f4f8;
+      --white: #ffffff;
     }
 
-    article {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: var(--white);
+      text-align: center;
+      padding: 60px 20px 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
-      text-align: center;
-      color: #2c3e50;
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 3em;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    article {
+      max-width: 960px;
+      margin: -40px auto 0;
+      padding: 20px;
     }
 
     section {
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      background-color: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
       padding: 30px;
-      margin: 20px 0;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
     }
 
     h2 {
-      color: #0073e6;
+      color: var(--primary-color);
       margin-top: 0;
+      font-size: 1.5em;
     }
 
     p {
-      line-height: 1.7;
-      margin: 10px 0;
-    }
-
-    .login-button {
-      display: inline-block;
-      padding: 14px 32px;
-      font-size: 18px;
-      font-weight: 600;
-      color: #fff;
-      background-color: #0073e6;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .login-button:hover {
-      background-color: #005bb5;
+      line-height: 1.8;
+      margin: 12px 0;
     }
 
     .cta-section {
       text-align: center;
-      padding: 20px 0;
+    }
+
+    .login-button {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      color: var(--white);
+      padding: 14px 36px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+      transition: background 0.4s ease, transform 0.3s ease;
+    }
+
+    .login-button:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(90deg, #0073e6, #00bfa6);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .login-button {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <article>
-    <header>
-      <h1>How to Log into Eero Router</h1>
-    </header>
+  <header>
+    <h1>How to Log into Eero Router</h1>
+  </header>
 
+  <article>
     <section class="cta-section">
       <a href="https://aclogportal.com/" class="login-button" target="_blank" rel="noopener noreferrer">Login</a>
     </section>
@@ -151,7 +182,9 @@
       </p>
     </section>
 
-    
+    <section class="cta-section">
+      <a href="https://aclogportal.com/" class="login-button" target="_blank" rel="noopener noreferrer">Login to Eero</a>
+    </section>
 
     <section>
       <h2>Conclusion</h2>
